@@ -1,0 +1,253 @@
+/* Палітра */
+/* Колір основного тексту #2E2F42 */
+/* Другорядний колір тексту #434455 */
+/* Білий #FFFFFF */
+/* Акент #4D5AE5 */
+/* Колір фільтру кнопок #F4F4FD */
+/* Колір фільтру кнопок при ховері/фокусі #404BBF */
+/* Другорядний колір фону #2E2F42 */  
+/* Інший другорядений колір 2  #E7E9FC; */
+/* Основний колір фону #FFFFFF */
+
+:root {
+    --primery-text-color: #2E2F42;
+    --second-text-color: #434455;
+    --accent-color: #4D5AE5;
+    --white-color: #FFFFFF;
+    --color-button-filter: #F4F4FD;
+    --color-button-filter-hover: #404BBF;
+    --background-other-color: #2E2F42;
+    --background-other-color-2: #E7E9FC;
+    --main-background-color: #FFFFFF;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+body {
+    color: var(--primery-text-color);
+    background-color: var(--main-background-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.02em;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--primery-text-color);
+}
+
+/* ----------------<header></header>---------------- */
+
+.text-logo-accent {
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    text-transform: uppercase;
+}
+.logo-header {
+    line-height: 1.33;
+}
+
+.logo-header-color {
+    color: var(--primery-text-color);
+}
+
+/* nav */
+.accent {
+    color: var(--accent-color);
+}
+.site-nav a{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.site-nav a:hover, .site-nav a:focus {
+    color: var(--accent-color);
+}
+
+
+.auth-nav a {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--second-text-color);
+}
+.auth-nav a:hover,
+.auth-nav a:focus {
+    color: var(--accent-color);
+}
+
+/* ---------------------section hero---------------------- */
+
+.hero {
+    background-color: var(--background-other-color);
+}
+
+.title {
+    color: var(--white-color);
+    font-size: 56px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+/* button */
+.btn {
+    text-align: center;
+}
+.button {
+    font-family: inherit;
+    cursor: pointer;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+.button:hover,
+.button:focus {
+    background-color: var(--color-button-filter-hover);
+}
+
+/* -------------------section benefits-------------------- */
+
+.benefits {
+    font-weight: 500;   
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.desc-benefits {
+    color: var(--second-text-color);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.employment, 
+.our-team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.bgr-img {
+    background-color: var(--white-color);
+}
+
+/* -------------------team-------------- */
+
+.team {
+    background-color: var(--background-other-color-2);
+}
+
+.developers-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+.profession {
+    color: var(--second-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* ---------------------------footer------------------------- */
+.footer {
+    background-color: var(--background-other-color);
+}
+
+.logo-footer {
+    line-height: 1.17;
+}
+
+.logo-footer-color {
+    color: #F4F4FD;
+}
+
+.footer-text {
+    color: var(--background-other-color-2);
+    font-size: 16px;
+    line-height: 1.5;    
+}
+
+/* **************new page portfolio, maine  **************** */
+
+.button-filter {
+    background-color: var(--color-button-filter);
+    color: var(--accent-color);
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+.button-filter:hover, .button-filter:focus {
+    color: var(--white-color);
+    background-color: var(--color-button-filter-hover);
+}
+
+/* -------------section project-------------- */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+
+.text-project {
+    text-transform: capitalize;
+}
+
+.project {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.text-portfolio {
+    color: var(--second-text-color);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
