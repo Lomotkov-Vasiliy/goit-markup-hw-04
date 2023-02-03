@@ -214,8 +214,8 @@ body {
 }
 
 .we-doing {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 
@@ -353,9 +353,14 @@ body {
     margin-right: 24px;
     margin-bottom: 48px;
 }
-.li-icon:last-child {
+/* .li-icon:last-child {
+    margin-bottom: 0px;
+} */
+
+.li-icon:nth-child(n+7) {
     margin-bottom: 0px;
 }
+
 .li-icon:nth-child(3n) {
     margin-right: 0px;
 }
