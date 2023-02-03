@@ -196,8 +196,8 @@ body {
 
 /* -------------------section benefits-------------------- */
 .pre-benefits {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .benefits {
     font-weight: 500;   
@@ -353,9 +353,13 @@ body {
     margin-right: 24px;
     margin-bottom: 48px;
 }
+.li-icon:last-child {
+    margin-bottom: 0px;
+}
 .li-icon:nth-child(3n) {
     margin-right: 0px;
 }
+
 
 .project {
     font-weight: 500;
