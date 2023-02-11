@@ -34,6 +34,7 @@ img {
 ul {
     margin: 0;
     padding-left: 0;
+    list-style: none;
 }
 
 body {
@@ -71,6 +72,7 @@ body {
     /* padding-top: 24px;
     padding-bottom: 24px;  */
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);;
 }
 
 .text-logo-accent {
@@ -81,6 +83,7 @@ body {
     color: var(--accent-color);
     text-transform: uppercase;
 }
+
 .logo-header {
     line-height: 1.33;
     margin-right: 76px;
@@ -159,6 +162,10 @@ body {
     background-color: var(--background-other-color);
     padding: 188px 0px;
     text-align: center;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-fon/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .title {
@@ -204,6 +211,26 @@ body {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
+.icon-svg {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 8px;
+}
+
+.list-svg {
+    
+    background-color: var(--color-button-filter);
+    border-radius: 4px;
+    width: calc((100% - 72px) / 4);
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 .benefits {
     font-weight: 500;   
     font-size: 20px;
@@ -218,9 +245,6 @@ body {
     width: 264px;
 }
 
-/* .employment {
-    padding-top: 120px;
-} */
 
 .employment, 
 .our-team {
@@ -238,14 +262,15 @@ body {
 
 
 .bgr-img {
-    background-color: var(--white-color);
     border-radius: 0px 0px 4px 4px;
 }
 .wrapp {
-    padding: 32px;
+    padding: 32px 16px;
     text-align: center;
-
+    background-color: var(--white-color);
+    border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    height: 168px;
 }
 
 /* -------------------team-------------- */
@@ -268,8 +293,97 @@ body {
     font-size: 16px;
     line-height: 1.5;
     /* text-align: center; */
-    /* margin-bottom: 32px; */
+    margin-bottom: 8px;
 }
+
+.employees-soc-network {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.soc-list{
+    width: 40px;
+    height: 40px;
+}
+
+.employees-to-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-color);
+}
+
+.employees-to-link:is(:hover, :focus) { 
+    background-color: var(--color-button-filter-hover);
+}
+
+.employees-icon {
+    fill: var(--color-button-filter);
+}
+
+/* --------------------------Customers--------------------- */
+
+.customers {
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
+
+.title-customers {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.customers-list {
+    display: flex;
+    gap: 24px;
+
+}
+
+.customers-item {
+    flex-basis: calc((100% - 120px) / 6);    
+    height: 88px;  
+}
+
+.customers-link {
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    color: #8E8F99;  
+}
+
+.customers-icon {
+    fill: currentColor;
+}
+
+
+.customers-link:is(:hover, :focus) {
+    border-color: var(--color-button-filter-hover);
+    color: var(--color-button-filter-hover);
+}
+
+
+/* .customers-link:is(:hover, :focus) {
+    border-color: var(--color-button-filter-hover);
+} 
+
+.customers-link:is(:hover, :focus) .customers-icon{
+    fill: var(--color-button-filter-hover);
+} */
+
 
 /* ---------------------------footer------------------------- */
 .footer {
@@ -293,6 +407,51 @@ body {
     width: 264px;
     margin-top: 16px;    
 }
+
+.footer-flex {
+    display: flex;
+}
+
+.footer-soc-media {
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 120px;
+}
+
+.footer-soc-network {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    margin-left: 120px;
+}
+
+
+
+.footer-to-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-to-link:is(:hover, :focus) {
+    background-color: #31D0AA;
+}
+
+.employees-icon {
+    fill: var(--color-button-filter);
+}
+
+
+
+
+
+
 
 /* **************new page portfolio, maine  **************** */
 
@@ -333,6 +492,10 @@ body {
 .button-filter:hover, .button-filter:focus {
     color: var(--white-color);
     background-color: var(--color-button-filter-hover);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 2px 1px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-color: var(--color-button-filter-hover);
 }
 
 /* -------------section project-------------- */
@@ -374,6 +537,9 @@ body {
 }
 
 
+
+
+
 .project {
     font-weight: 500;
     font-size: 20px;
@@ -397,11 +563,23 @@ body {
     border-bottom: 1px solid #E7E9FC;
     border-left: 1px solid #E7E9FC;
     border-right: 1px solid #E7E9FC;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 
+.link-project {
+    text-decoration: none;
+    color: var(--primery-text-color);
+}
 
+.link-project:is(:hover, :focus) .text-wrapper{
+    text-decoration: none;
+    color: var(--primery-text-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 
-
-
-
+    border-right: 0.5px solid #F4F4FD;
+    border-bottom: 0.5px solid #F4F4FD;
+    border-left: 0.5px solid #F4F4FD;
+}
