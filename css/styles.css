@@ -159,6 +159,12 @@ body {
 /* ---------------------section hero---------------------- */
 
 .hero {
+    /* центрування картинки-фону */
+    max-width: 1440px;
+    margin: 0 auto;
+
+
+
     background-color: var(--background-other-color);
     padding: 188px 0px;
     text-align: center;
